@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops2
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: Deployment
+  template:
+    metadata:
+      labels:
+        app: Deployment
+    spec:
+      containers:
+      - name: website
+        image: newimage/pranjaldev03
+        ports:
+        - containerPort: 80
+
