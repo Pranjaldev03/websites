@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: website
-        image: newimage/pranjaldev03
+        image: pranjaldev03/newimage
         ports:
         - containerPort: 80
 
